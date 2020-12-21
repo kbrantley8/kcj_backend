@@ -2,7 +2,7 @@
 
 First, clone into whatever directory you want with:
 
-git clone https://github.com/kbrantley8/kcj_backend.git
+`git clone https://github.com/kbrantley8/kcj_backend.git`
 
 
 
