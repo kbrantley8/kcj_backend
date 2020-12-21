@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Index HTML Example</title>
+<script type="text/javascript" src="index-helper.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<style>
+input {
+    text-align: center;
+    font-size: 24px;
+}
+.res_cont {
+    width: 25%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 15px;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align: center">
+    <h1>Change input below:</h1>
+    <input id="input_num">
+    <div style="margin-top: 15px">
+        <button id="button_press" onclick="handleButtonClick()">Press to send</button>
+    </div>
+    <h2>The returned result is:</h2>
+    <div class="res_cont">
+        <h3 id="response">15</h3>
+    </div>
+</div>
+
+</body>
+</html>
