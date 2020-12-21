@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 const exampleRoutes = require('./routes/exampleRoutes');
 app.use(exampleRoutes)
 
-app.get('/', (req, res) => res.send('This is the opening page of cabinet-directory'))
+app.get('/', (req, res) => res.send('This is the opening page of kcj'))
 
 app.listen(process.env.PORT || 3000, () => {
     console.log(`Listening on port ${process.env.PORT}`)

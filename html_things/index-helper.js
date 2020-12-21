@@ -13,7 +13,7 @@ async function handleButtonClick() {
         })
 
     } else {
-        
+
         axios.post(base_url + '/add_num',
             {
               num: parseInt(input_val),
@@ -24,7 +24,19 @@ async function handleButtonClick() {
             document.getElementById("response").innerHTML = response.data;
         })
         .catch(error => {
-            console.error(error.response.data.error)
+            console.error(error.response.data.error);
+            document.getElementById("response").innerHTML = error.response.data.error;
         })
     }
+}
+
+async function handleUserClick() {
+
+    let input_val = document.getElementById("input_num").value;
+
+    axios.get(base_url + '/user/' + input_val)
+    .then(response => {
+        console.log(response.data)
+        document.getElementById("response").innerHTML = response.data;
+    })
 }
