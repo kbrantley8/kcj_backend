@@ -2,7 +2,7 @@
 
 First, clone into whatever directory you want with:
 
-git clone https://github.com/kbrantley8/kcj_backend.git
+`git clone https://github.com/kbrantley8/kcj_backend.git`
 
 
 
@@ -19,3 +19,9 @@ Navigate in terminal to the folder where you git cloned into and go into kcj_bac
 `npm install body-parser`
 
 `npm install axios`
+
+In the terminal, run:
+
+`node server.js`
+
+to load the localhost server
