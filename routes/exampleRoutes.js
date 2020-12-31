@@ -20,11 +20,11 @@ router.post('/add_num', async (req, res) => {
     return res.status(200).send(num_to_return.toString());
 })
 
-router.get('/user/:userId', (req, res) => {
-    let userId = req.params.userId;
-    console.log('/user called at ' + new Date().toLocaleString() + ' with userId: ' + userId)
+// router.get('/user/:userId', (req, res) => {
+//     let userId = req.params.userId;
+//     console.log('/user called at ' + new Date().toLocaleString() + ' with userId: ' + userId)
 
-    res.status(200).send('Get user info for user with ID: ' + userId)
-})
+//     res.status(200).send('Get user info for user with ID: ' + userId)
+// })
 
 module.exports = router;

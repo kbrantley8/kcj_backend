@@ -8,6 +8,9 @@
 input {
     text-align: center;
     font-size: 24px;
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 10px
 }
 .res_cont {
     width: 25%;
@@ -18,9 +21,9 @@ input {
 }
 </style>
 </head>
-<body>
+<body style="padding: 15px 25px">
 
-<div style="text-align: center">
+<div style="text-align: center; display: none; margin-top: 150px">
     <h1>Change input below:</h1>
     <input id="input_num">
     <div style="margin-top: 15px">
@@ -33,6 +36,85 @@ input {
 
     <div style="margin-top: 15px">
         <button id="button_press" onclick="handleUserClick()">Get User</button>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 150px">
+    <div class="res_cont" style="width: 30%">
+        <h1>Get All Users</h1>
+        <div style="margin-top: 15px">
+            <button onclick="getAllUsersClick()">Get All Users</button>
+        </div>
+    </div>
+</div>
+
+
+<div style="text-align: center; margin-top: 150px">
+    <div class="res_cont" style="width: 30%">
+        <h1>Create User</h1>
+        <div>
+            <input id="user_email" placeholder="Insert email here..." style="font-size: 14px">
+            <select id="user_type">
+                <option value="0">User</option>
+                <option value="1">Admin</option>
+            </select>
+        </div>
+        <div style="margin-top: 15px">
+            <button onclick="createUserClick()">Create User</button>
+        </div>
+    </div>
+    <div class="res_cont" style="margin-top: 15px">
+        <h2>Response: </h2>
+        <h3 id="response_user">No data yet</h3>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 150px">
+    <div class="res_cont" style="width: 30%">
+        <h1>User Login</h1>
+        <div>
+            <input id="login_email" placeholder="Insert email here..." style="font-size: 14px">
+        </div>
+        <div style="margin-top: 15px">
+            <button onclick="loginUserClick()">User Login</button>
+        </div>
+    </div>
+    <div class="res_cont" style="margin-top: 15px">
+        <h2>Response: </h2>
+        <h3 id="response_login">No data yet</h3>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 150px">
+    <div class="res_cont" style="width: 30%">
+        <h1>Edit User</h1>
+        <div>
+            <input id="edit_old_email" placeholder="Insert current email here..." style="font-size: 14px">
+            <input id="edit_new_email" placeholder="Insert new email here..." style="font-size: 14px">
+        </div>
+        <div style="margin-top: 15px">
+            <button onclick="editUserClick()">Edit User</button>
+        </div>
+    </div>
+    <div class="res_cont" style="margin-top: 15px">
+        <h2>Response: </h2>
+        <h3 id="response_edit">No data yet</h3>
+    </div>
+</div>
+
+<div style="text-align: center; margin-top: 150px">
+    <div class="res_cont" style="width: 30%">
+        <h1>Delete User</h1>
+        <div>
+            <input id="delete_email" placeholder="Insert email here..." style="font-size: 14px">
+        </div>
+        <div style="margin-top: 15px">
+            <button onclick="deleteUserClick()">Delete User</button>
+        </div>
+    </div>
+    <div class="res_cont" style="margin-top: 15px">
+        <h2>Response: </h2>
+        <h3 id="response_delete">No data yet</h3>
     </div>
 </div>
 
